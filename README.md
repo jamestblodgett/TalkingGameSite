@@ -9,5 +9,3 @@ In this website I include several features:
 - Character sheets the players have made, and how to update them.
 - Images, such as maps, character art, etc.
 - "Secret" information, that you can access with passwords found in-game.
-
-On this site, there are some portions of "Secret information." In order to access this, you have to find the password, through some sort of method in the game, then type it in. Anything found on the website with the word [redacted] portion in the text has information hidden behind the password.
