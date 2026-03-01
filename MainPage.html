@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talking Game Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to The Talking Game website</h1>
+    <nav>
+    <a href="MainPage.html">Home</a> |
+    <a href="Overview.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Official Webpage!</h2>
+    <p>This is going to be the official, one of a kind Talking Game website.
+        It is made for the display and organization of information relating
+        to the Talking Game.
+    </p>
+    <a><Overview class="html"></Overview></a>
+    <p>In this website I include several features:</p>
+    <ul>
+        <li>All data about the game, including characters, worlds, magic, etc.</li>
+        <li>Character sheets the players have made, and how to update them.</li>
+        <li>Images, such as maps, character art, etc.</li>
+        <li>"Secret" information, that you can access with passwords found in-game.</li>
+    <ul>
+    
+    <p>On this site, there are some portions of "Secret information." In order to 
+        access this, you have to find the password, through some sort of method in
+         the game, then type it in. Anything found on the website with the word 
+         [redacted] portion in the text has information hidden behind the password.</p>
+    <div id="secret-section" style="display: none;">
+        <h2>Hidden Section</h2>
+        <p>This section is only visible when the correct password is entered.</p>
+        <nav>
+        <a href="MainPage.html">Home</a> |
+        <a href="Overview.html">About</a>
+        </nav>
+    </div>
+
+<div id="password-prompt">
+  <input type="password" id="password-input" placeholder="Enter password" />
+  <button onclick="checkPassword()">Submit</button>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TGSite</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
