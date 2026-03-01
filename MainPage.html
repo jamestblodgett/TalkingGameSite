@@ -8,14 +8,16 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!--This is the title and buttons code-->
   <header>
     <h1>Welcome to The Talking Game website</h1>
     <nav>
-    <a href="MainPage.html">Home</a> |
+    <a href="MainPage.html">Home</a> 
     <a href="Overview.html">About</a>
     </nav>
   </header>
 
+  <!--This is the primary content code.-->
   <main>
     <h2>Official Webpage!</h2>
     <p>This is going to be the official, one of a kind Talking Game website.
@@ -25,29 +27,37 @@
     <a><Overview class="html"></Overview></a>
     <p>In this website I include several features:</p>
     <ul>
-        <li>All data about the game, including characters, worlds, magic, etc.</li>
-        <li>Character sheets the players have made, and how to update them.</li>
-        <li>Images, such as maps, character art, etc.</li>
-        <li>"Secret" information, that you can access with passwords found in-game.</li>
+        <li>All data about the game, including characters, worlds, magic, etc.
+        </li>
+        <li>Character sheets the players have made, and how to update them.
+        </li>
+        <li>Images, such as maps, character art, etc.
+        </li>
+        <li>"Secret" information, that you can access with passwords found in-game.
+        </li>
     <ul>
     
     <p>On this site, there are some portions of "Secret information." In order to 
         access this, you have to find the password, through some sort of method in
          the game, then type it in. Anything found on the website with the word 
          [redacted] portion in the text has information hidden behind the password.</p>
-    <div id="secret-section" style="display: none;">
+<!--This is the hidden password info: It currently has nothing.-->   
+         <div id="secret-section" style="display: none;">
         <h2>Hidden Section</h2>
-        <p>This section is only visible when the correct password is entered.</p>
+        <p>This section is only visible when the correct password is entered.
+          If you can see this, you cheated, I haven't given out the password yet.
+          Screw you. Regardless, feel free to check out the rest of the site, using
+          either the buttons below or by using the navigation bar at the top.
+        </p>
         <nav>
-        <a href="MainPage.html">Home</a> |
+        <a href="MainPage.html">Home</a> 
         <a href="Overview.html">About</a>
         </nav>
     </div>
 
-<div id="password-prompt">
-  <input type="password" id="password-input" placeholder="Enter password" />
-  <button onclick="checkPassword()">Submit</button>
-</div>
+<!--This is the password code: Use it to add passwords.-->
+    <div id="password-placeholder"></div>
+    
   </main>
 
   <footer>

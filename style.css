@@ -14,6 +14,41 @@ h2 {
     text-align: center;
 }
 
+.password-prompt {
+    text-align: center;
+    margin-top: 0em;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+  padding-left: 5em; /* Match list padding */
+}
+
+
+.image-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+#KeyGate {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-top: 5em;
+}
+
+/* Center images inserted by script.js (uses <div class="images"><img>...) */
+.images img {
+  display: block;
+  margin: 5em auto 0;
+  max-width: 90%;
+  height: auto;
+  padding-left: 0; /* override global p padding if needed */
+}
+
+
 body {
   font-family: 'Lexend', sans-serif;
   margin: 0px;
@@ -39,7 +74,7 @@ nav a {
 ul {
   display: table;
   margin: 0 auto; 
-  padding-left: 2em; 
+  padding-left: 0em; 
   list-style-position: outside; 
   text-indent: 0;
   text-align: left;
