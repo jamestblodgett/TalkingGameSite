@@ -1,24 +1,30 @@
+/* ===== CSS Variables (Colors and Theme) ===== */
 :root {
     --main-color: #ffffff;
     --accent: #646464;
     --sec-accent: #454545;
-    --title-text: #ffb700;
-    --title-subtext: #ff7700;
+    --title-text: #00b48a;
+    --title-subtext: #00ff37;
 }
 
+/* ===== Global Button Styles ===== */
 button {
     margin-top: 2em;
 }
 
+/* ===== Heading Styles ===== */
 h2 {
     text-align: center;
 }
 
+
+/* ===== Password Prompt ===== */
 .password-prompt {
     text-align: center;
     margin-top: 0em;
 }
 
+/* ===== Paragraph and Text Styles ===== */
 p {
   margin: 0 auto;
   max-width: 800px;
@@ -27,6 +33,7 @@ p {
 
 
 
+/* ===== Image Containers ===== */
 .image-container {
   text-align: center;
   margin-top: 5em;
@@ -49,6 +56,7 @@ p {
 }
 
 
+/* ===== Body and Main Layout ===== */
 body {
   font-family: 'Lexend', sans-serif;
   margin: 0px;
@@ -56,6 +64,7 @@ body {
   background-color: var(--main-color);
 }
 
+/* ===== Navigation Menu Styles ===== */
 nav {
     margin-top: 0.5em;
 }
@@ -85,13 +94,15 @@ nav a:hover {
   background-color: #ffffff;
 }
 
+/* ===== Header and Footer ===== */
 header, footer {
   background-color: var(--accent);
   color: var(--title-text);
-  padding: 10em;
+  padding: 3em;
   text-align: center;
 }
 
+/* ===== Main Content Area ===== */
 main p {
     text-indent: 2em;
     margin: 0em auto;
@@ -103,9 +114,10 @@ main {
   padding: 5em;
 }
 
+/* ===== Navbar (Horizontal Menu) ===== */
 .navbar {
   list-style-type: none;
-  margin: 3;
+  margin: 2;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -127,6 +139,7 @@ main {
   background-color: var(--sec-accent)
 }
 
+/* ===== Dropdown Menu Styles ===== */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -165,7 +178,7 @@ main {
   display: block;
 }
 
-/* Style button containers for centered rows of 5 */
+/* ===== Character/Content Section Buttons ===== */
 #character-buttons {
   display: flex;
   flex-direction: column;
@@ -173,17 +186,20 @@ main {
   margin-top: 2em;
 }
 
+/* ===== Character Section Containers ===== */
 .character-section {
   width: 100%;
   margin-bottom: 3em;
   text-align: center;
 }
 
+/* Character section heading styling */
 .character-section h3 {
   margin: 1em 0 0.5em 0;
   color: var(--title-text);
 }
 
+/* Character section paragraph styling */
 .character-section p {
   margin: 1em auto;
   max-width: 800px;
@@ -191,6 +207,7 @@ main {
   text-indent: 2em;
 }
 
+/* ===== Button Group Layout ===== */
 .button-group {
   display: flex;
   flex-wrap: wrap;

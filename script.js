@@ -1,7 +1,3 @@
-function sayHello() {
-  alert("Congratulations! This does absolutely nothing!");
-}
-
 function checkPassword() {
   const input = document.getElementById("password-input").value.trim();
 
@@ -62,6 +58,8 @@ function addMenus(selector) {
       <div class="dropdown-content">
         <a href="AddWorlds.html">Worlds</a>
         <a href="Characters.html">Characters</a>
+        <a href="Magic.html">Magic</a>
+        <a href="Races.html">Races</a>
       </div>
     </li>
   </ul>
@@ -124,6 +122,7 @@ function addContent(containerId, sections) {
 // Call functions
 insertPasswordPrompt("password-placeholder");
 addMenus(".menu-placeholder");
+
 addContent("character-buttons", [
   {
     title: "Character Players",
@@ -190,3 +189,61 @@ addContent("character-buttons", [
     ]
   }
 ]);
+
+// world buttons added to the worlds page
+addContent("world-buttons", [
+  {
+    title: "Primary Worlds",
+    text: "The Primary Worlds, generally made as Planets, are the main area of the game, where most characters, plots, and storylines will take place. There are 5 worlds, each with their own \"theme\", and with their own magic systems.",
+    buttons: [
+      { name: "Creevalia", url: "Creevalia.html" },
+      { name: "Errathis", url: "Errathis.html" },
+      { name: "Koprax", url: "Koprax.html" },
+      { name: "Terrland", url: "Terrland.html" },
+      { name: "Lotusium", url: "Lotusium.html" },
+    ]
+  },{
+  title: "Extra Worlds",
+  text: "The Extra Worlds are worlds that are not a part of the main universe, but are still in the game, and are equally (if not more) important than the main worlds.",
+  buttons: [
+    { name: "Eon", url: "Eon.html" },
+    { name: "The Void", url: "Void.html" },
+    { name: "Character World", url: "CharacterWorld.html" },
+    { name: "Dream world", url: "DreamWorld.html" },
+    { name: "Elsewhere", url: "Elsewhere.html" },
+    { name: "The Omnack", url: "Omnack.html" },
+    { name: "The Judgement Hall", url: "JudgementHall.html" },
+    { name: "Other", url: "OtherWorlds.html" },
+  ]
+}
+
+]);
+
+addContent("Magic", [
+  {
+    title: "Magic types",
+    text: "",
+    buttons: [
+      { name: "Creevalian", url: "Creevaliamagic.html"},
+      { name: "Metals", url: "Metals.html"},
+      { name: "Special abilities", url: "specials.html"},
+      { name: "Esteen", url: "Esteen.html"},
+      { name: "Lunar", url: "Lunarmagic.html"},
+      { name: "Cards", url: "Magicards.html"},
+      { name: "Runes", url: "Runes.html"},
+      { name: "Shards", url: "shards.html"},
+      { name: "Ancient Gems", url: "ancientGems.html"},
+      { name: "Symblings", url: "Symblings.html"},
+      { name: "Additional Types", url: "additionalTypes.html"},
+    ]
+  }
+])
+addContent("secret-Magic", [
+  {
+    title: "More Magic types",
+    text: "",
+    buttons: [
+      { name: "Intention Shifting", url: "intentionManipulation.html"},
+    ]
+  }
+])
