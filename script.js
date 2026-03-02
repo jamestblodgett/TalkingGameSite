@@ -3,14 +3,34 @@ function sayHello() {
 }
 
 function checkPassword() {
-  const input = document.getElementById("password-input").value;
-  const correctPassword = "A"; // You can change this
+  const input = document.getElementById("password-input").value.trim();
 
-  if (input === correctPassword) {
-    document.getElementById("secret-section").style.display = "block";
+  // map passwords to actions (show sections)
+  const actions = {
+    // basic secret content password
+    "A": () => {
+      showSection("secret-section");
+    },
+    // admin password: show everything
+    "admin": () => {
+      showSection("secret-section");
+      showSection("admin-section");
+    }
+  };
+
+  const action = actions[input];
+  if (action) {
+    action();
     document.getElementById("password-prompt").style.display = "none";
   } else {
     alert("Incorrect password. Try again.");
+  }
+}
+
+function showSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.style.display = "block";
   }
 }
 
@@ -29,4 +49,144 @@ function insertPasswordPrompt(targetId) {
   }
 }
 
+function addMenus(selector) {
+  const containers = document.querySelectorAll(selector);
+  containers.forEach(container => {
+    container.innerHTML = `
+       <nav>
+  <ul class="navbar">
+    <li><a href="Mainpage.html">Home</a></li>
+    <li><a href="Overview.html">Overview</a></li>
+    <li class="dropdown">
+      <a href="GameContent.html" class="dropbtn">Game Content</a>
+      <div class="dropdown-content">
+        <a href="AddWorlds.html">Worlds</a>
+        <a href="Characters.html">Characters</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+    `;
+  });
+}
+
+function createButton(buttonData) {
+  const btn = document.createElement("button");
+  btn.textContent = buttonData.name;
+  
+  if (buttonData.url) {
+    // Navigate to the specified page
+    btn.onclick = () => window.location.href = buttonData.url;
+  } else if (buttonData.onClick) {
+    // Or use a custom function if provided
+    btn.onclick = buttonData.onClick;
+  }
+  return btn;
+}
+
+function addContent(containerId, sections) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  
+  sections.forEach(section => {
+    // Create section wrapper
+    const sectionDiv = document.createElement("div");
+    sectionDiv.className = "character-section";
+    
+    // Add section title if provided
+    if (section.title) {
+      const title = document.createElement("h3");
+      title.textContent = section.title;
+      sectionDiv.appendChild(title);
+    }
+    
+    // Add descriptive text if provided
+    if (section.text) {
+      const textDiv = document.createElement("p");
+      textDiv.textContent = section.text;
+      sectionDiv.appendChild(textDiv);
+    }
+    
+    // Add buttons if provided
+    if (section.buttons && section.buttons.length > 0) {
+      const buttonGroup = document.createElement("div");
+      buttonGroup.className = "button-group";
+      section.buttons.forEach(buttonData => {
+        buttonGroup.appendChild(createButton(buttonData));
+      });
+      sectionDiv.appendChild(buttonGroup);
+    }
+    
+    container.appendChild(sectionDiv);
+  });
+}
+
+// Call functions
 insertPasswordPrompt("password-placeholder");
+addMenus(".menu-placeholder");
+addContent("character-buttons", [
+  {
+    title: "Character Players",
+    text: "The \"NPC\" Players, or the Non-human players. The NPCs that have the Player status.",
+    buttons: [
+      { name: "Benson", url: "Benson.html" },
+      { name: "Plon", url: "Plon.html" },
+      { name: "14", url: "14.html" },
+      { name: "Lora", url: "Lora.html" },
+      { name: "Konnor", url: "Konnor.html" }
+    ]
+  },
+  {
+    title: "Allspark's Castle",
+    text: "The characters associated most closely with Allspark, and who (usually) live there.",
+    buttons: [
+      { name: "Gret", url: "Gret.html" },
+      { name: "Lucille", url: "Lucille.html" },
+      { name: "Irvan", url: "Irvan.html" },
+      { name: "Urtin", url: "Urtin.html" },
+      { name: "Aadlo", url: "Aadlo.html" },
+      { name: "Shayla", url: "Shayla.html" },
+      { name: "Charlotte", url: "Charlotte.html" },
+    ]
+  },
+  {
+    title: "Ben's Island",
+    text: "The characters associated most closely with Ben's Island, and who (usually) live there.",
+    buttons: [
+      { name: "Drew", url: "Drew.html" },
+      { name: "Claude", url: "Claude.html" },
+      { name: "IVAN", url: "IVAN.html" },
+      { name: "Clacker", url: "Clacker.html" },
+    ]
+  },
+  {
+    title: "Marshall's Tree",
+    text: "The characters associated with Marshall's tree",
+    buttons: [
+      { name: "The Tree", url: "TheTree.html" },
+      { name: "Tex", url: "Tex.html" },
+    ]
+  },
+  {
+      title: "Eon",
+      text: "The Eonian Characters who live in the city of Eon.",
+      buttons: [
+        { name: "Malvat", url: "Malvat.html" },
+        { name: "Arya", url: "Arya.html" },
+        { name: "\"The Eon King\"", url: "EonKing.html" },
+      ]
+  },
+  {
+    title: "Wanderers",
+    text: "The characters who are not tied to any specific location or group.",
+    buttons: [
+      { name: "Geode", url: "Geode.html" },
+      { name: "Scalb", url: "Scalb.html" },
+      { name: "Dreb", url: "Dreb.html" },
+      { name: "Leroy", url: "Leroy.html" },
+      { name: "Els", url: "Els.html" },
+      { name: "Fow", url: "Fow.html" },
+      { name: "Chloe", url: "Chloe.html" },
+    ]
+  }
+]);

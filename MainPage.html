@@ -11,10 +11,9 @@
   <!--This is the title and buttons code-->
   <header>
     <h1>Welcome to The Talking Game website</h1>
-    <nav>
-    <a href="MainPage.html">Home</a> 
-    <a href="Overview.html">About</a>
-    </nav>
+
+  <div class="menu-placeholder"></div>
+
   </header>
 
   <!--This is the primary content code.-->
@@ -24,24 +23,18 @@
         It is made for the display and organization of information relating
         to the Talking Game.
     </p>
-    <a><Overview class="html"></Overview></a>
     <p>In this website I include several features:</p>
     <ul>
-        <li>All data about the game, including characters, worlds, magic, etc.
-        </li>
-        <li>Character sheets the players have made, and how to update them.
-        </li>
-        <li>Images, such as maps, character art, etc.
-        </li>
-        <li>"Secret" information, that you can access with passwords found in-game.
-        </li>
-    <ul>
-    
+        <li>Information about the game, including characters, worlds, magic, items, and more.</li>
+        <li>Secret information that can only be accessed by finding the password.</li>
+        <li>Buttons to navigate to different sections of the website.</li>
+        <li>Teasers for new things to my game.</li>
+    </ul>
     <p>On this site, there are some portions of "Secret information." In order to 
         access this, you have to find the password, through some sort of method in
          the game, then type it in. Anything found on the website with the word 
          [redacted] portion in the text has information hidden behind the password.</p>
-<!--This is the hidden password info: It currently has nothing.-->   
+<!--This is the hidden password info.-->   
          <div id="secret-section" style="display: none;">
         <h2>Hidden Section</h2>
         <p>This section is only visible when the correct password is entered.
@@ -49,10 +42,14 @@
           Screw you. Regardless, feel free to check out the rest of the site, using
           either the buttons below or by using the navigation bar at the top.
         </p>
-        <nav>
-        <a href="MainPage.html">Home</a> 
-        <a href="Overview.html">About</a>
-        </nav>
+        <div class="menu-placeholder"></div>
+    </div>
+
+    <!-- admin-only content, shown when entering the special "admin" password -->
+    <div id="admin-section" style="display: none;">
+      <h2>Admin Section</h2>
+      <p>Welcome Gamemaster! You have access to everything.
+      <br />You could place debug info, additional links, or whatever you like here.</p>
     </div>
 
 <!--This is the password code: Use it to add passwords.-->

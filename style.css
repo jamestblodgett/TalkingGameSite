@@ -23,8 +23,8 @@ p {
   margin: 0 auto;
   max-width: 800px;
   text-align: left;
-  padding-left: 5em; /* Match list padding */
 }
+
 
 
 .image-container {
@@ -88,7 +88,7 @@ nav a:hover {
 header, footer {
   background-color: var(--accent);
   color: var(--title-text);
-  padding: 1em;
+  padding: 10em;
   text-align: center;
 }
 
@@ -101,4 +101,107 @@ main p {
 
 main {
   padding: 5em;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 3;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #333;
+  color: var(--title-subtext);
+}
+
+.navbar a:hover {
+  background-color: var(--sec-accent)
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1;
+  background-color: var(--sec-accent);
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-subcontent {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: var(--sec-accent);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-subcontent a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover > .dropdown-subcontent {
+  display: block;
+}
+
+/* Style button containers for centered rows of 5 */
+#character-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.character-section {
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.character-section h3 {
+  margin: 1em 0 0.5em 0;
+  color: var(--title-text);
+}
+
+.character-section p {
+  margin: 1em auto;
+  max-width: 800px;
+  text-align: left;
+  text-indent: 2em;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.button-group button {
+  flex: 0 1 calc(10% - 1em);
+  min-width: 120px;
+  padding: 1em;
+  margin-top: 0;
 }
