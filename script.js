@@ -51,7 +51,7 @@ function addMenus(selector) {
     container.innerHTML = `
        <nav>
   <ul class="navbar">
-    <li><a href="Mainpage.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="Overview.html">Overview</a></li>
     <li class="dropdown">
       <a href="GameContent.html" class="dropbtn">Game Content</a>
