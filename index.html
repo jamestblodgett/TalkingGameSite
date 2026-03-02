@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talking Game Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!--This is the title and buttons code-->
+  <header>
+    <h1>Welcome to The Talking Game website</h1>
+
+  <div class="menu-placeholder"></div>
+
+  </header>
+
+  <!--This is the primary content code.-->
+  <main>
+    <h2>Official Webpage!</h2>
+    <p>This is going to be the official, one of a kind Talking Game website.
+        It is made for the display and organization of information relating
+        to the Talking Game.
+    </p>
+    <p>In this website I include several features:</p>
+    <ul>
+        <li>Information about the game, including characters, worlds, magic, items, and more.</li>
+        <li>Secret information that can only be accessed by finding the password.</li>
+        <li>Buttons to navigate to different sections of the website.</li>
+        <li>Teasers for new things to my game.</li>
+    </ul>
+    <p>On this site, there are some portions of "Secret information." In order to 
+        access this, you have to find the password, through some sort of method in
+         the game, then type it in. Anything found on the website with the word 
+         [redacted] portion in the text has information hidden behind the password.</p>
+    <h2>IMPORTANT</h2>
+    <p>If there is a link, button, or otherwise accessible file that you click on this webpage, and 
+      it does not open, THIS IS NORMAL. This is simply because I have not added it to the website yet,
+      so please be patient while I get it working.
+    </p>
+<!--This is the hidden password info.-->   
+         <div id="secret-section" style="display: none;">
+        <h2>Hidden Section</h2>
+        <p>This section is only visible when the correct password is entered.
+          If you can see this, you cheated, I haven't given out the password yet.
+          Screw you. Regardless, feel free to check out the rest of the site, using
+          either the buttons below or by using the navigation bar at the top.
+        </p>
+        <div class="menu-placeholder"></div>
+    </div>
+
+    <!-- admin-only content, shown when entering the special "admin" password -->
+    <div id="admin-section" style="display: none;">
+      <h2>Admin Section</h2>
+      <p>Welcome Gamemaster! You have access to everything.
+      <br />You could place debug info, additional links, or whatever you like here.</p>
+    </div>
+
+<!--This is the password code: Use it to add passwords.-->
+    <div id="password-placeholder"></div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; Last updated: 3/1/2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
