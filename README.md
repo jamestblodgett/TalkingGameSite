@@ -9,3 +9,7 @@ In this website I include several features:
 - Character sheets the players have made, and how to update them.
 - Images, such as maps, character art, etc.
 - "Secret" information, that you can access with passwords found in-game.
+
+
+Link to Web accessible version:
+https://jamestblodgett.github.io/TalkingGameSite/
