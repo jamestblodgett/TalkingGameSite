@@ -1,10 +1,11 @@
 /* ===== CSS Variables (Colors and Theme) ===== */
 :root {
-    --main-color: #ffffff;
-    --accent: #646464;
+    --main-color: #363636;
+    --accent: #003e7b;
     --sec-accent: #454545;
-    --title-text: #00b48a;
-    --title-subtext: #00ff37;
+    --title-text: #0092c3;
+    --title-subtext: #00bfff;
+    --text-color: #ffffff;
 }
 
 /* ===== Global Button Styles ===== */
@@ -13,10 +14,20 @@ button {
 }
 
 /* ===== Heading Styles ===== */
+h1 {
+    text-align: center;
+    color: var(--title-text);
+}
+
 h2 {
+    color: var(--title-subtext);
     text-align: center;
 }
 
+h3 {
+    text-align: center;
+    color: var(--title-subtext);
+}
 
 /* ===== Password Prompt ===== */
 .password-prompt {
@@ -26,6 +37,7 @@ h2 {
 
 /* ===== Paragraph and Text Styles ===== */
 p {
+  color: var(--text-color);
   margin: 0 auto;
   max-width: 800px;
   text-align: left;
@@ -81,6 +93,7 @@ nav a {
 }
 
 ul {
+  color: var(--text-color);
   display: table;
   margin: 0 auto; 
   padding-left: 0em; 
@@ -104,10 +117,15 @@ header, footer {
 
 /* ===== Main Content Area ===== */
 main p {
+    color: var(--text-color);
     text-indent: 2em;
     margin: 0em auto;
     max-width: 800px;
     line-height:1.6;
+}
+
+p {
+    color: var(--text-color);
 }
 
 main {
