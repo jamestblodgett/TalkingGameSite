@@ -4,11 +4,11 @@ function checkPassword() {
   // map passwords to actions (show sections)
   const actions = {
     // basic secret content password
-    "A": () => {
+    "beanWell": () => {
       showSection("secret-section");
     },
     // admin password: show everything
-    "admin": () => {
+    "UliName": () => {
       showSection("secret-section");
       showSection("admin-section");
     }
@@ -53,6 +53,7 @@ function addMenus(selector) {
   <ul class="navbar">
     <li><a href="index.html">Home</a></li>
     <li><a href="Overview.html">Overview</a></li>
+    <li><a href="Players.html">Players</a></li>
     <li class="dropdown">
       <a href="GameContent.html" class="dropbtn">Game Content</a>
       <div class="dropdown-content">
@@ -62,6 +63,7 @@ function addMenus(selector) {
         <a href="Races.html">Races</a>
       </div>
     </li>
+    <li><a href="updates.html">Coming soon</a></li>
   </ul>
 </nav>
     `;
@@ -244,6 +246,26 @@ addContent("secret-Magic", [
     text: "",
     buttons: [
       { name: "Intention Shifting", url: "intentionManipulation.html"},
+    ]
+  }
+])
+addContent("Players", [
+  {
+    title: "Players",
+    text: "",
+    buttons: [
+      { name: "Allspark", url: "Allspark.html" },
+      { name: "Jake Morningstar", url: "JakeM.html" },
+      { name: "Mizan My-Zan", url: "MizanM.html" },
+      { name: "Kior", url: "Kior.html" },
+      // { name: "Marshall", url: "Marshall.html" },
+      { name: "Aelaon Somiel", url: "AelaonS.html" },
+      // { name: "River", url: "RiverM.html" },
+      // { name: "Shawn", url: "ShawnT.html" },
+      // { name: "Elias", url: "Elias.html" },
+      { name: "\"Multiple character set\"", url: "MultipleC.html" },
+      // { name: "Braden", url: "Braden.html" },
+      
     ]
   }
 ])
