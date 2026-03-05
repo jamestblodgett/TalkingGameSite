@@ -11,4 +11,4 @@ In this website I include several features:
 - "Secret" information, that you can access with passwords found in-game.
 
 
-Link to Web accessible version: [Talking Game Site] (https://jamestblodgett.github.io/TalkingGameSite/)
+Link to Web accessible version: [Talking Game Site](https://jamestblodgett.github.io/TalkingGameSite/)
