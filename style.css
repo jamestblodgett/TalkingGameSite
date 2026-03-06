@@ -6,6 +6,7 @@
     --title-subtext: #00bfff;
     --text-color: #ffffff;
     --link-text: #e3fd00;
+    --format-text: #d3ffc7;
 }
 
 /* ===== Global Button Styles ===== */
@@ -51,6 +52,15 @@ p {
 
 a {
     color: var(--link-text);
+}
+
+/* ===== Bold and italics ===== */
+li strong {
+    color: var(--format-text);
+}
+
+p b {
+    color: #ff0000
 }
 
 
@@ -102,6 +112,17 @@ nav a {
 }
 
 ul {
+  color: var(--text-color);
+  display: table;
+  margin: 0 auto; 
+  padding-left: 0em; 
+  list-style-position: outside; 
+  text-indent: 0;
+  text-align: left;
+  max-width: 800px;
+}
+
+ol {
   color: var(--text-color);
   display: table;
   margin: 0 auto; 
