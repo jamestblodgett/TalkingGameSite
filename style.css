@@ -29,6 +29,12 @@ h3 {
     color: var(--title-subtext);
 }
 
+h4 {
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.5em;
+}
+
 /* ===== Password Prompt ===== */
 .password-prompt {
     text-align: center;
@@ -219,6 +225,8 @@ main {
   margin: 1em 0 0.5em 0;
   color: var(--title-text);
 }
+
+
 
 /* Character section paragraph styling */
 .character-section p {

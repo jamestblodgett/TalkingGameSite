@@ -61,6 +61,7 @@ function addMenus(selector) {
         <a href="Characters.html">Characters</a>
         <a href="Magic.html">Magic</a>
         <a href="Races.html">Races</a>
+        <a href="OtherContent.html">Other</a>
       </div>
     </li>
     <li><a href="updates.html">Coming soon</a></li>
@@ -267,4 +268,35 @@ addContent("Players", [
       
     ]
   }
+])
+addContent("OtherContent", [
+{
+  title: "",
+  text:"",
+  buttons: [
+    { name: "Existence overview", url: "ExistenceOverview.html" },
+  ]
+
+},{
+    title: "Other information",
+    text: "The game has plenty of information that doesn't fit into the other categoriries, and is therefore listed here.",
+    buttons: [
+      { name: "Other locations", url: "OtherLocations.html" },
+      { name: "Timelines", url: "Timelines.html" },
+      { name: "Intentions", url: "Sparks.html" },
+    ]
+  }
+])
+
+addContent("AdditionalHiddenInfo", [
+  {
+    title: "Additional information",
+    text: "",
+    buttons: [
+      { name: "Imported Concepts"},
+      { name: "The true world", url: "TrueWorld.html" },
+      { name: "Matter recycling", url: "MatterRecycling.html" },
+    ]
+   
+  },
 ])
