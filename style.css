@@ -6,6 +6,7 @@
     --title-text: #0092c3;
     --title-subtext: #00bfff;
     --text-color: #ffffff;
+    --link-text: #e3fd00;
 }
 
 /* ===== Global Button Styles ===== */
@@ -43,6 +44,9 @@ p {
   text-align: left;
 }
 
+a {
+    color: var(--link-text);
+}
 
 
 /* ===== Image Containers ===== */

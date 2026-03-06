@@ -218,7 +218,6 @@ addContent("world-buttons", [
     { name: "Other", url: "OtherWorlds.html" },
   ]
 }
-
 ]);
 
 addContent("Magic", [
