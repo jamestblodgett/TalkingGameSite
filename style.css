@@ -2,7 +2,6 @@
 :root {
     --main-color: #363636;
     --accent: #003e7b;
-    --sec-accent: #454545;
     --title-text: #0092c3;
     --title-subtext: #00bfff;
     --text-color: #ffffff;
@@ -89,7 +88,7 @@ nav a {
   text-decoration: none;
   color: var(--title-subtext);
   padding: 1em 2.4em;
-  background-color: var(--sec-accent);
+  background-color: var(--main-color);
   display: inline-block;
   margin: 0.005em;
   clip-path: polygon(0% 15%, 100% 15%, 100% 85%, 0% 85%);
@@ -158,7 +157,7 @@ main {
 }
 
 .navbar a:hover {
-  background-color: var(--sec-accent)
+  background-color: var(--main_color)
 }
 
 /* ===== Dropdown Menu Styles ===== */

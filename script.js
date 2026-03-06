@@ -253,17 +253,17 @@ addContent("Players", [
     title: "Players",
     text: "",
     buttons: [
-      { name: "Allspark", url: "Allspark.html" },
-      { name: "Jake Morningstar", url: "JakeM.html" },
-      { name: "Mizan My-Zan", url: "MizanM.html" },
-      { name: "Kior", url: "Kior.html" },
-      // { name: "Marshall", url: "Marshall.html" },
-      { name: "Aelaon Somiel", url: "AelaonS.html" },
+      { name: "Allspark", url: "Allspark.html" },       // James
+      { name: "Jake Morningstar", url: "JakeM.html" },  // Ben
+      { name: "Mizan My-Zan", url: "MizanM.html" },     // Quade
+      { name: "Kior", url: "Kior.html" },               // Ronin
+      { name: "Marshall", url: "Marshall.html" },       // Marshall
+      { name: "Providence", url: "Providence.html" },   // Braden
+      { name: "Aelaon Somiel", url: "AelaonS.html" },   // Analee
       // { name: "River", url: "RiverM.html" },
       // { name: "Shawn", url: "ShawnT.html" },
       // { name: "Elias", url: "Elias.html" },
-      { name: "\"Multiple character set\"", url: "MultipleC.html" },
-      // { name: "Braden", url: "Braden.html" },
+      { name: "\"Multiple character set\"", url: "MultipleC.html" }, // Elijah
       
     ]
   }
