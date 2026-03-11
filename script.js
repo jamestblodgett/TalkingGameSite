@@ -24,10 +24,8 @@ function checkPassword() {
 }
 
 function showSection(id) {
-  const el = document.getElementById(id);
-  if (el) {
-    el.style.display = "block";
-  }
+  const elements = document.querySelectorAll('[id="' + id + '"]');
+  elements.forEach(el => el.style.display = "block");
 }
 
 function insertPasswordPrompt(targetId) {

@@ -133,6 +133,10 @@ ol {
   max-width: 800px;
 }
 
+li {
+  margin-top: 0.5em;
+}
+
 nav a:hover {
   background-color: #ffffff;
 }
