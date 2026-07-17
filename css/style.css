@@ -1,0 +1,320 @@
+/* ===== CSS Variables (Colors and Theme) ===== */
+:root {
+    --main-color: #363636;
+    --accent: #003e7b;
+    --title-text: #d0ff00;
+    --title-subtext: #00bfff;
+    --text-color: #ffffff;
+    --link-text: #e3fd00;
+    --format-text: #d3ffc7;
+}
+
+/* ===== Global Button Styles ===== */
+button {
+    margin-top: 2em;
+}
+
+/* ===== Heading Styles ===== */
+h1 {
+    text-align: center;
+    color: var(--title-text);
+    font-size: 2em;
+}
+
+h2 {
+    color: var(--title-subtext);
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: var(--title-subtext);
+}
+
+h4 {
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* ===== Paragraph and Text Styles ===== */
+p {
+  color: var(--text-color);
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: left;
+}
+
+a {
+    color: var(--link-text);
+}
+
+/* ===== Bold and italics ===== */
+li strong {
+    color: var(--format-text);
+}
+
+p b {
+    color: #ff0000
+}
+
+
+/* ===== Image Containers ===== */
+.image-container {
+  text-align: center;
+  margin-top: 5em;
+}
+
+/* Center images inserted by script.js (uses <div class="images"><img>...) */
+.images img {
+  display: block;
+  margin: 5em auto 0;
+  max-width: 90%;
+  height: auto;
+  padding-left: 0; /* override global p padding if needed */
+}
+
+
+/* ===== Body and Main Layout ===== */
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+}
+
+/* ===== Navigation Menu Styles ===== */
+.top-nav {
+  margin-top: 1.5em;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 180px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--title-subtext);
+  color: var(--main-color);
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+.nav-button:hover,
+.nav-button:focus-visible {
+  background-color: var(--link-text);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button:visited {
+  color: var(--main-color);
+}
+
+ul {
+  color: var(--text-color);
+  display: table;
+  margin: 0 auto; 
+  padding-left: 0em; 
+  list-style-position: outside; 
+  text-indent: 0;
+  text-align: left;
+  max-width: 800px;
+}
+
+ol {
+  color: var(--text-color);
+  display: table;
+  margin: 0 auto; 
+  padding-left: 0em; 
+  list-style-position: outside; 
+  text-indent: 0;
+  text-align: left;
+  max-width: 800px;
+}
+
+li {
+  margin-top: 0.5em;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+}
+
+/* ===== Header and Footer ===== */
+header, footer {
+  background-color: var(--accent);
+  color: var(--title-text);
+  padding: 3em 2rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header {
+  min-height: 8rem;
+}
+
+footer {
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Main Content Area ===== */
+main p {
+    color: var(--text-color);
+    text-indent: 2em;
+    margin: 0em auto;
+    max-width: 800px;
+    line-height:1.6;
+}
+
+p {
+    color: var(--text-color);
+}
+
+main {
+  flex: 1;
+  padding: 5em;
+}
+
+/* ===== Navbar (Horizontal Menu) ===== */
+.navbar {
+  list-style-type: none;
+  margin: 2;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #333;
+  color: var(--title-subtext);
+}
+
+.navbar a:hover {
+  background-color: var(--main_color)
+}
+
+/* ===== Dropdown Menu Styles ===== */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 1;
+  background-color: var(--sec-accent);
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown-subcontent {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: var(--sec-accent);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-subcontent a {
+  padding: 10px 15px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content:hover > .dropdown-subcontent {
+  display: block;
+}
+
+/* ===== Character/Content Section Buttons ===== */
+#character-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+/* ===== Character Section Containers ===== */
+.character-section {
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+/* Character section heading styling */
+.character-section h3 {
+  margin: 1em 0 0.5em 0;
+  color: var(--title-text);
+}
+
+
+
+/* Character section paragraph styling */
+.character-section p {
+  margin: 1em auto;
+  max-width: 800px;
+  text-align: left;
+  text-indent: 2em;
+}
+
+/* ===== Button Group Layout ===== */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.button-group button {
+  flex: 0 1 calc(10% - 1em);
+  min-width: 120px;
+  padding: 1em;
+  margin-top: 0;
+}
