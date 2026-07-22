@@ -1,8 +1,8 @@
 const navItems = [
-  { label: 'Home', shortLabel: 'Home', href: 'index.html' },
-  { label: 'Updates', shortLabel: 'Updates', href: 'updates.html' },
-  { label: 'Info', shortLabel: 'Info', href: 'info.html' },
-//   { label: 'About', shortLabel: 'About', href: 'about.html' }
+  { label: 'Home', shortLabel: 'Home', href: '../index.html' },
+  { label: 'Updates', shortLabel: 'Updates', href: '../pages/updates.html' },
+  { label: 'Information', shortLabel: 'Info', href: '../pages/stuff.html' },
+//   { label: 'About', shortLabel: 'About', href: '../pages/about.html' }
 ];
 
 const navButtonsContainer = document.getElementById('nav-buttons');
