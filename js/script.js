@@ -1,9 +1,25 @@
+const siteConfig = {
+  lastUpdated: '9/26/2026',
+  siteName: 'Talking Game Website'
+};
+
 const navItems = [
   { label: 'Home', shortLabel: 'Home', href: '../index.html' },
   { label: 'Updates', shortLabel: 'Updates', href: '../pages/updates.html' },
   { label: 'Information', shortLabel: 'Info', href: '../pages/info.html' },
   { label: 'Links', shortLabel: 'Links', href: '../pages/links.html' },
 ];
+
+const renderFooter = () => {
+  const footerRoot = document.getElementById('site-footer');
+  if (!footerRoot) return;
+
+  footerRoot.innerHTML = `
+    <footer class="site-footer">
+      <p>&copy; ${siteConfig.siteName} • Last updated: ${siteConfig.lastUpdated}</p>
+    </footer>
+  `;
+};
 
 const navButtonsContainer = document.getElementById('nav-buttons');
 
@@ -42,3 +58,5 @@ if (navButtonsContainer) {
   window.addEventListener('resize', updateNavigationLayout);
   updateNavigationLayout();
 }
+
+renderFooter();
