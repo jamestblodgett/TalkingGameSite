@@ -3,12 +3,17 @@ const siteConfig = {
   siteName: 'Talking Game Website'
 };
 
+const isInPagesFolder = /(?:^|\/)pages\//.test(window.location.pathname);
+
 const navItems = [
-  { label: 'Home', shortLabel: 'Home', href: '../index.html' },
-  { label: 'Updates', shortLabel: 'Updates', href: '../pages/updates.html' },
-  { label: 'Information', shortLabel: 'Info', href: '../pages/info.html' },
-  { label: 'Links', shortLabel: 'Links', href: '../pages/links.html' },
-];
+  { label: 'Home', shortLabel: 'Home', target: 'index.html' },
+  { label: 'Updates', shortLabel: 'Updates', target: 'pages/updates.html' },
+  { label: 'Information', shortLabel: 'Info', target: 'pages/info.html' },
+  { label: 'Links', shortLabel: 'Links', target: 'pages/links.html' },
+].map((item) => ({
+  ...item,
+  href: new URL(isInPagesFolder ? `../${item.target}` : item.target, window.location.href).toString(),
+}));
 
 const renderFooter = () => {
   const footerRoot = document.getElementById('site-footer');
